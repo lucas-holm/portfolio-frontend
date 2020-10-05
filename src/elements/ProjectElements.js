@@ -2,7 +2,7 @@ import styled from "styled-components"
 
 export const ProjectsWrapper = styled.div`
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(8, 1fr);
   justify-content: center;
   grid-gap: 1.5rem;
 `
@@ -16,18 +16,27 @@ export const ProjectCard = styled.article`
   border-radius: 0.25rem;
 
   :nth-child(1) {
-    grid-column: 2 / span 4;
+    grid-column: 2 / span 5;
     grid-row: 1 / 1;
   }
 
   :nth-child(2) {
-    grid-column: 3 / span 6;
+    grid-column: 3 / span 5;
     grid-row: 2 / 2;
   }
 
   :nth-child(3) {
-    grid-column: 2 / span 4;
+    grid-column: 2 / span 5;
     grid-row: 3 / 3;
+  }
+
+  :nth-child(4) {
+    grid-column: 3 / span 5;
+    grid-row: 4 / 4;
+  }
+
+  :hover {
+    transform: scale(1.02);
   }
 `
 

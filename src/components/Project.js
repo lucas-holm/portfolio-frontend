@@ -14,7 +14,7 @@ const Project = ({ description, title, stack, image, index }) => {
     <ProjectCard>
       <Image fluid={image.childImageSharp.fluid} />
       <ProjectInfo>
-        <span>{index + 1}</span>
+        <span>{index + 1}.</span>
         <h3>{title}</h3>
         <p>{description}</p>
       </ProjectInfo>
