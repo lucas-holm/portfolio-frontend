@@ -1,26 +1,28 @@
 import React from "react"
 import Title from "./Title"
 import services from "../constants/services"
+import { PostWrapper, Card } from "../elements/ServiceElements"
+import Section from "./Section"
+
 const Services = () => {
   return (
-    <section className="section bg-grey">
-      <Title title="Tjänster" />
-      <div className="section-center services-center">
+    <Section color="#fff">
+      {/* <Title title="Tjänster" /> */}
+      <PostWrapper>
         {services.map(service => {
           //  destructure
           const { id, icon, title, text } = service
 
           return (
-            <article key={id} className="service">
+            <Card key={id}>
               {icon}
               <h4>{title}</h4>
-              <div className="underline"></div>
               <p>{text}</p>
-            </article>
+            </Card>
           )
         })}
-      </div>
-    </section>
+      </PostWrapper>
+    </Section>
   )
 }
 

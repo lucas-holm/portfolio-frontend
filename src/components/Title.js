@@ -1,7 +1,12 @@
 import React from "react"
+import { FaDivide } from "react-icons/fa"
 
-const Title = () => {
-  return <h2>title component</h2>
+const Title = ({ title }) => {
+  return (
+    <div>
+      <h2>{title}</h2>
+    </div>
+  )
 }
 
 export default Title
