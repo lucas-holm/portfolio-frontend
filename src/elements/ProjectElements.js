@@ -34,10 +34,6 @@ export const ProjectCard = styled.article`
     grid-column: 3 / span 5;
     grid-row: 4 / 4;
   }
-
-  :hover {
-    transform: scale(1.02);
-  }
 `
 
 export const ProjectInfo = styled.div`

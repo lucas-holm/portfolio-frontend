@@ -35,4 +35,9 @@ export const RightColumn = styled.div`
   grid-area: ${props => props.area};
   padding-top: 50px;
   padding-bottom: 50px;
+
+  @media only screen and (max-width: 800px) {
+    display: flex;
+    justify-content: center;
+  }
 `

@@ -44,7 +44,12 @@ const Intro = () => {
           </Safari>
           <LeftColumn area="left-column">
             <Image
-              style={{ width: "200px", height: "200px", margin: "0 auto" }}
+              style={{
+                width: "40%",
+                // height: "200px",
+                margin: "0 auto",
+                borderRadius: "0.25rem",
+              }}
               fluid={fluid}
             />
           </LeftColumn>

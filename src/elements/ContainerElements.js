@@ -5,6 +5,10 @@ export const MainContainer = styled.div`
   margin: 0 auto;
   display: ${props => (props.display ? props.display : "block")};
   justify-content: ${props => (props.display === "flex" ? "center" : "")};
+
+  @media only screen and (max-width: 1200px) {
+    width: 95%;
+  }
 `
 
 export const IntroContainer = styled.div`
@@ -20,4 +24,12 @@ export const IntroContainer = styled.div`
   grid-template-areas:
     "nav-wrapper nav-wrapper"
     "left-column right-column";
+
+  @media only screen and (max-width: 800px) {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "nav-wrapper"
+      "left-column"
+      "right-column";
+  }
 `

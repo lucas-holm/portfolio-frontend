@@ -7,7 +7,7 @@ import Section from "./Section"
 const Services = () => {
   return (
     <Section color="#fff">
-      {/* <Title title="Tjänster" /> */}
+      <Title title="Tjänster" />
       <PostWrapper>
         {services.map(service => {
           //  destructure

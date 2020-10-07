@@ -17,7 +17,14 @@ export const BlogCard = styled.article`
   transition: all 0.3s linear;
   border-radius: 0.25rem;
   background-color: #fff;
-  height: 90%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  /* :hover {
+    transform: scale(1.02);
+  } */
 `
 
 export const BlogContent = styled.div``
@@ -34,4 +41,29 @@ export const Category = styled.p`
   margin: 1rem 0.3rem;
   border-radius: 0.25rem;
   color: #fff;
+`
+
+export const BlogArticle = styled.article`
+  h1,
+  h2 {
+    text-align: center;
+  }
+
+  ul {
+    margin-top: 2rem;
+    display: inline-block;
+  }
+  ul li {
+    background: #eaeaea;
+    padding: 0.5rem 1rem;
+    margin: 1rem 0;
+    text-transform: uppercase;
+  }
+
+  pre {
+    background: #222;
+    color: yellow;
+    overflow-x: scroll;
+    padding: 1rem 1.5rem;
+  }
 `
