@@ -40,7 +40,7 @@ const Jobs = () => {
             return (
               <Button
                 border={`${index === value ? "2px solid black" : ""}`}
-                key={item.strapiId}
+                key={index}
                 onClick={() => setValue(index)}
               >
                 {item.company}
@@ -62,7 +62,7 @@ const Jobs = () => {
                 key={item.id}
               >
                 <FaAngleDoubleRight
-                  style={{ marginRight: "1rem", color: "#f3c02f" }}
+                  style={{ marginRight: "1rem", color: "#6272a4" }}
                 ></FaAngleDoubleRight>
                 <p>{item.name}</p>
               </div>

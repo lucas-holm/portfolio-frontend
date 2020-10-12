@@ -14,7 +14,7 @@ import {
 
 const query = graphql`
   {
-    file(relativePath: { eq: "portraitcopy.jpg" }) {
+    file(relativePath: { eq: "portrait.png" }) {
       childImageSharp {
         fluid {
           ...GatsbyImageSharpFluid

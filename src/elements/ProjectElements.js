@@ -44,10 +44,15 @@ export const StackWrapper = styled.div`
   padding: 1rem;
 `
 
-export const StackItem = styled.span`
+export const StackItem = styled.div`
   background-color: #6272a4;
   padding: 0.5rem;
   margin: 0 0.3rem;
   border-radius: 0.25rem;
   color: #fff;
+  display: inline-block;
+
+  @media only screen and (max-width: 1000px) {
+    margin-top: 0.5rem;
+  }
 `

@@ -3,6 +3,7 @@ import React from "react"
 import Navbar from "./Navbar"
 import Sidebar from "./Sidebar"
 import Footer from "./Footer"
+import Burger from "./Burger"
 import { createGlobalStyle } from "styled-components"
 
 const GlobalStyle = createGlobalStyle`
@@ -11,6 +12,7 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
     
   }
   ul {
@@ -26,6 +28,7 @@ const Layout = ({ children }) => {
     <>
       <GlobalStyle />
       <Navbar />
+      <Burger />
       {children}
       <Footer />
     </>

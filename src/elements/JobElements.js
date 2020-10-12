@@ -14,7 +14,8 @@ export const Button = styled.button`
   transition: all 0.3s linear;
 
   :hover {
-    background-color: #f3c02f;
+    background-color: #6272a4;
+    color: #fff;
   }
 `
 
@@ -25,7 +26,6 @@ export const JobsWrapper = styled.article`
   background-color: #fff;
   min-width: 60%;
 
-  /* @media only screen and (max-width: 768px) {
-    
-  } */
+  @media only screen and (max-width: 768px) {
+  }
 `
