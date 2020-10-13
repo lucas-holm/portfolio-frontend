@@ -7,11 +7,13 @@ export const ButtonWrapper = styled.div`
 
 export const Button = styled.button`
   padding: 0.8rem;
-  border: ${props => (props.border ? props.border : "none")};
+  border: none;
   margin: 0.5rem 0.5rem;
   border-radius: 0.3rem;
-  background-color: #fff;
+  background-color: ${props => props.background};
   transition: all 0.3s linear;
+  color: ${props => props.color};
+  outline: none;
 
   :hover {
     background-color: #6272a4;
@@ -25,6 +27,7 @@ export const JobsWrapper = styled.article`
   border-radius: 0.25rem;
   background-color: #fff;
   min-width: 60%;
+  margin-bottom: 3rem;
 
   @media only screen and (max-width: 768px) {
   }

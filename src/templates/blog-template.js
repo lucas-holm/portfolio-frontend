@@ -5,18 +5,21 @@ import ReactMarkdown from "react-markdown"
 import Section from "../components/Section"
 import Container from "../components/Container"
 import { BlogArticle } from "../elements/BlogElements"
+import SEO from "../components/SEO"
+import Button from "../components/Button"
 
 const ComponentName = ({ data }) => {
-  const { content } = data.blog
+  const { content, title, description } = data.blog
 
   return (
     <Layout>
+      <SEO title={title} description={description} />
       <Section>
         <Container>
           <BlogArticle>
             <ReactMarkdown source={content} />
           </BlogArticle>
-          <Link to="/blog">Blog</Link>
+          <Button href="/blog">Blogg</Button>
         </Container>
       </Section>
     </Layout>
@@ -27,6 +30,8 @@ export const query = graphql`
   query GetSingleBlog($slug: String) {
     blog: strapiBlogs(slug: { eq: $slug }) {
       content
+      title
+      description
     }
   }
 `

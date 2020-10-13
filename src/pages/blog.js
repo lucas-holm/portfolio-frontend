@@ -2,6 +2,7 @@ import React from "react"
 import Layout from "../components/Layout"
 import { graphql } from "gatsby"
 import Blogs from "../components/Blogs"
+import SEO from "../components/SEO"
 // ...GatsbyImageSharpFluid
 
 const Blog = ({
@@ -11,7 +12,8 @@ const Blog = ({
 }) => {
   return (
     <Layout>
-      <Blogs blogs={blogs} title="blog" />
+      <SEO title="Blogg" />
+      <Blogs blogs={blogs} title="Alla bloggartiklar" />
     </Layout>
   )
 }

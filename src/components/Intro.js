@@ -2,6 +2,7 @@ import React from "react"
 import Image from "gatsby-image"
 import { graphql, useStaticQuery } from "gatsby"
 import { IntroContainer } from "../elements/ContainerElements"
+import SocialLinks from "../constants/socialLinks"
 import Section from "./Section"
 import Container from "./Container"
 import {
@@ -54,7 +55,9 @@ const Intro = () => {
             />
           </LeftColumn>
           <RightColumn area="right-column">
-            <h1>Hi, I'm Lucas</h1>
+            <h1>Lucas Holm</h1>
+            <h4>Studerar Systemutveckling.NET på TUC Yrkeshögskola</h4>
+            <SocialLinks />
           </RightColumn>
         </IntroContainer>
       </Container>

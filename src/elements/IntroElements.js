@@ -36,8 +36,28 @@ export const RightColumn = styled.div`
   padding-top: 50px;
   padding-bottom: 50px;
 
+  ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    padding: 1rem;
+
+    :hover {
+      transform: scale(1.2);
+    }
+  }
+
+  a {
+    font-size: 2rem;
+    color: #495057;
+  }
+
   @media only screen and (max-width: 800px) {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
   }
 `

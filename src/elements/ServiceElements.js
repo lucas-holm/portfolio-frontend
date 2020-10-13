@@ -18,6 +18,7 @@ export const Card = styled.article`
   border-radius: 0.25rem;
 
   :hover {
-    background-color: #e4abfe;
+    background-color: #6272a4;
+    color: #fff;
   }
 `

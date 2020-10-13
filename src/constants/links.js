@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 const data = [
   {
     id: 1,
-    text: "Home",
+    text: "Hem",
     url: "/",
   },
   {
@@ -13,23 +13,28 @@ const data = [
   },
   {
     id: 3,
-    text: "Projects",
+    text: "Projekt",
     url: "/projects/",
   },
   {
     id: 4,
-    text: "Blog",
+    text: "Blogg",
     url: "/blog/",
   },
   {
     id: 5,
-    text: "Contact",
+    text: "Kontakt",
     url: "/contact/",
   },
 ]
 
 const tempLinks = data.map(link => {
-  return (
+  //if id === 2 i want to return an <a>-tag instead of <Link> since it takes us to another domain.
+  return link.id === 2 ? (
+    <li key={link.id}>
+      <a href={link.url}>{link.text}</a>
+    </li>
+  ) : (
     <li key={link.id}>
       <Link to={link.url}>{link.text}</Link>
     </li>

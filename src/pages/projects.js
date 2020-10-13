@@ -11,7 +11,7 @@ const ProjectsPage = ({
 }) => {
   return (
     <Layout>
-      <Projects projects={projects} title="all projects" />
+      <Projects projects={projects} title="Alla projekt" />
     </Layout>
   )
 }

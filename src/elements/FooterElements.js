@@ -8,6 +8,8 @@ export const SocialWrapper = styled.div`
   justify-content: center;
   ul {
     display: flex;
+    margin: 0;
+    padding: 0;
   }
 
   li {

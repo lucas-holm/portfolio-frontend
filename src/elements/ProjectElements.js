@@ -5,6 +5,10 @@ export const ProjectsWrapper = styled.div`
   grid-template-columns: repeat(8, 1fr);
   justify-content: center;
   grid-gap: 1.5rem;
+
+  @media only screen and (max-width: 800px) {
+    grid-template-columns: 1fr;
+  }
 `
 
 export const ProjectCard = styled.article`
@@ -15,24 +19,26 @@ export const ProjectCard = styled.article`
   transition: all 0.3s linear;
   border-radius: 0.25rem;
 
-  :nth-child(1) {
-    grid-column: 2 / span 5;
-    grid-row: 1 / 1;
-  }
+  @media only screen and (min-width: 800px) {
+    :nth-child(1) {
+      grid-column: 2 / span 5;
+      grid-row: 1 / 1;
+    }
 
-  :nth-child(2) {
-    grid-column: 3 / span 5;
-    grid-row: 2 / 2;
-  }
+    :nth-child(2) {
+      grid-column: 3 / span 5;
+      grid-row: 2 / 2;
+    }
 
-  :nth-child(3) {
-    grid-column: 2 / span 5;
-    grid-row: 3 / 3;
-  }
+    :nth-child(3) {
+      grid-column: 2 / span 5;
+      grid-row: 3 / 3;
+    }
 
-  :nth-child(4) {
-    grid-column: 3 / span 5;
-    grid-row: 4 / 4;
+    :nth-child(4) {
+      grid-column: 3 / span 5;
+      grid-row: 4 / 4;
+    }
   }
 `
 

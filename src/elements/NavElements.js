@@ -31,7 +31,7 @@ export const NavWrapper = styled.nav`
 
 //styling for the burger-button
 export const MenuIcon = styled.button`
-  position: fixed;
+  position: absolute;
   top: 1rem;
   right: 2rem;
   display: flex;

@@ -3,7 +3,7 @@ import styled from "styled-components"
 export const BlogsWrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, 320px);
-  gap: 20px;
+  grid-gap: 20px;
   justify-content: center;
   padding-bottom: 50px;
   padding-top: 50px;
@@ -18,9 +18,12 @@ export const BlogCard = styled.article`
   border-radius: 0.25rem;
   background-color: #fff;
   height: 100%;
+
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
 
   /* :hover {
     transform: scale(1.02);

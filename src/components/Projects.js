@@ -5,6 +5,7 @@ import { Link } from "gatsby"
 import Section from "./Section"
 import Container from "./Container"
 import { ProjectsWrapper } from "../elements/ProjectElements"
+import Button from "./Button"
 
 const Projects = ({ projects, title, showLink }) => {
   return (
@@ -16,7 +17,7 @@ const Projects = ({ projects, title, showLink }) => {
             return <Project key={project.id} index={index} {...project} />
           })}
         </ProjectsWrapper>
-        {showLink ? <Link to="/projects">Projects</Link> : ""}
+        {showLink ? <Button href="/projects">Alla projekt</Button> : ""}
       </Container>
     </Section>
   )

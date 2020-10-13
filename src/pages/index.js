@@ -7,6 +7,7 @@ import Jobs from "../components/Jobs"
 import Projects from "../components/Projects"
 import Blogs from "../components/Blogs"
 import Intro from "../components/Intro"
+import SEO from "../components/SEO"
 
 export default ({ data }) => {
   const {
@@ -15,11 +16,12 @@ export default ({ data }) => {
   } = data
   return (
     <Layout>
+      <SEO title="Home" description="this is our homepage" />
       <Intro />
       <Services />
       <Jobs />
-      <Projects projects={projects} title="featured projects" showLink />
-      <Blogs blogs={blogs} title="latest blogs" showLink />
+      <Projects projects={projects} title="Aktuella projekt" showLink />
+      <Blogs blogs={blogs} title="Senaste artiklar" showLink />
     </Layout>
   )
 }

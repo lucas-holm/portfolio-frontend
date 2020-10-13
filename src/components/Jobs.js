@@ -39,7 +39,8 @@ const Jobs = () => {
           {jobs.map((item, index) => {
             return (
               <Button
-                border={`${index === value ? "2px solid black" : ""}`}
+                background={`${index === value ? "#6272a4" : "#fff"}`}
+                color={`${index === value ? "#fff" : "black"}`}
                 key={index}
                 onClick={() => setValue(index)}
               >
@@ -70,7 +71,6 @@ const Jobs = () => {
           })}
         </JobsWrapper>
       </Container>
-      <Link to="/">Mitt CV</Link>
     </Section>
   )
 }
