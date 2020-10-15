@@ -52,6 +52,10 @@ module.exports = {
           {
             family: "Poppins",
           },
+          {
+            family: "Ubuntu",
+            variants: [`400`, `700`],
+          },
         ],
       },
     },

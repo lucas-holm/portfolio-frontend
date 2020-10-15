@@ -51,6 +51,12 @@ export const BlogArticle = styled.article`
   h2 {
     text-align: center;
   }
+  h1 {
+    font-size: 2.5rem;
+  }
+  p {
+    line-height: 2rem;
+  }
 
   ul {
     margin-top: 2rem;
@@ -68,5 +74,16 @@ export const BlogArticle = styled.article`
     color: yellow;
     overflow-x: scroll;
     padding: 1rem 1.5rem;
+  }
+
+  blockquote {
+    background-color: #8be9fd;
+    border-radius: 0.25rem;
+    padding: 1rem;
+  }
+
+  @media only screen and (max-width: 768px) {
+    width: 80%;
+    margin: 0 auto;
   }
 `

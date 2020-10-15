@@ -59,5 +59,9 @@ export const RightColumn = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    h4 {
+      margin: 0 1rem;
+    }
   }
 `
